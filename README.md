@@ -1,7 +1,7 @@
 # LaTeX template for UCF Electronic Thesis and Dissertation (ETD)
 
 Project type: LaTeX  
-Owner: Daniel Gallagher 
+Owner: Daniel Gallagher - `dgallagher@knights.ucf.edu`   
 Affiliation: [Consortium for Applied Acoustoelectronic Technology](http://caat.engr.ucf.edu/) at the [University of Central Florida](http://www.ucf.edu/)
 
 ## Introduction
@@ -10,7 +10,7 @@ This template was originally developed in 2007 in compliance with the UCF ETD ma
 ### Motivation
 By publishing my template in a public git repository, I hope that the template may be used by others and will continue to evolve with the revised ETD format guidelines through user contributed updates. 
 
-Hopefully many people find this template helpful.
+Hopefully many people find this template helpful. Thank you emails are always appreciated.
 
 ## Wiki
 
@@ -28,11 +28,11 @@ Individuals are encouraged to support bug fixes and other updates. No official s
 
 #### Git SSH:
 
-	git clone git@bitbucket.org:dgallagher/ucf-thesis-latex-template.git
+`git clone git@bitbucket.org:dgallagher/ucf-thesis-latex-template.git`
 
 #### Git HTTPS:
 
-    git clone https://dgallagher@bitbucket.org/dgallagher/ucf-thesis-latex-template.git
+`git clone https://dgallagher@bitbucket.org/dgallagher/ucf-thesis-latex-template.git`
 	
 ### Zip file:
 
@@ -50,7 +50,7 @@ Update the necessary files listed below, then compile pdf document using pdflate
 * `ucfth12.clo` - Page layout and font size specifications
 * `ucfthti.clo` - Preliminary page generation and formatting.
 
-### Example files
+#### Example files
 
 * `thesis.tex` - Main file - Use: ``pdflatex thesis''
 * `preamble.tex`- Define packages
@@ -73,12 +73,12 @@ The code is currently functional with the following set-up:
 Other configurations may be compatible but remain unverified.
 
 ## Contributors
-* Daniel Gallagher (&copy; 2007)
-* Derived from work by Ivan Garibay (&copy; 2000-2004) 
-* Taken from UCLA THESIS/DISSERTATION CLASS by John Heidemann (&copy; 1995)
-* Taken from UCLA THESIS/DISSERTATION CLASS (version 0.94 BETA, 5/23/91) &copy; 1988 Richard B. Wales.  All Rights Reserved. by Richard B. Wales.
+* Daniel Gallagher (© 2007)
+* Derived from work by Ivan Garibay (©; 2000-2004) 
+* Taken from UCLA THESIS/DISSERTATION CLASS by John Heidemann (© 1995)
+* Taken from UCLA THESIS/DISSERTATION CLASS (version 0.94 BETA, 5/23/91) © 1988 Richard B. Wales.  All Rights Reserved. by Richard B. Wales.
 * Taken from DISSERTATION style (1/10/86) by Dorab Patel and Eduardo Krell
-* Taken from REPORT style &copy; 1985 by Leslie Lamport
+* Taken from REPORT style © 1985 by Leslie Lamport
 
 # LICENCE AND COPYRIGHT
 Released under [The MIT License](http://opensource.org/licenses/MIT)
