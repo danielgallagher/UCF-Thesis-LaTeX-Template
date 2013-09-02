@@ -73,8 +73,8 @@ The code is currently functional with the following set-up:
 Other configurations may be compatible but remain unverified.
 
 ## Contributors
-* Daniel Gallagher (© 2007)
-* Derived from work by Ivan Garibay (©; 2000-2004) 
+* Daniel Gallagher (© 2007-2013)
+* Derived from work by Ivan Garibay (© 2000-2004) 
 * Taken from UCLA THESIS/DISSERTATION CLASS by John Heidemann (© 1995)
 * Taken from UCLA THESIS/DISSERTATION CLASS (version 0.94 BETA, 5/23/91) © 1988 Richard B. Wales.  All Rights Reserved. by Richard B. Wales.
 * Taken from DISSERTATION style (1/10/86) by Dorab Patel and Eduardo Krell
