@@ -4,6 +4,10 @@ Project type: LaTeX
 Owner: Daniel Gallagher - `dgallagher@knights.ucf.edu`   
 Affiliation: [Consortium for Applied Acoustoelectronic Technology](http://caat.engr.ucf.edu/) at the [University of Central Florida](http://www.ucf.edu/)
 
+#### Project Mirrors:  
+
+* [Bitbucket](https://bitbucket.org/dgallagher/ucf-thesis-latex-template)
+* [Github](https://github.com/danielgallagher/UCF-Thesis-LaTeX-Template)
 ## Introduction
 This template was originally developed in 2007 in compliance with the UCF ETD masters thesis guidelines. It has since been used by various colleges in their PhD dissertation submissions. At this time there was no official LaTeX template available from the university. There is now a basic template supplied by the editor in Graduate studies located on the [ETD formatting website](http://www.students.graduate.ucf.edu/ETD_formatting/). However, some may prefer to use this template for there needs.
 
@@ -26,17 +30,25 @@ Individuals are encouraged to support bug fixes and other updates. No official s
 
 ## Get the Template
 
-#### Git SSH:
+### Git SSH:
 
 `git clone git@bitbucket.org:dgallagher/ucf-thesis-latex-template.git`
 
-#### Git HTTPS:
+or 
+
+`git@github.com:danielgallagher/UCF-Thesis-LaTeX-Template.git`
+
+### Git HTTPS:
 
 `git clone https://dgallagher@bitbucket.org/dgallagher/ucf-thesis-latex-template.git`
+
+or
+
+`https://github.com/danielgallagher/UCF-Thesis-LaTeX-Template.git`
 	
 ### Zip file:
 
-Download the current version from [bitbucket repository](https://bitbucket.org/dgallagher/ucf-thesis-latex-template/downloads). 
+Download the current version from [bitbucket](https://bitbucket.org/dgallagher/ucf-thesis-latex-template/downloads) or [github]() repository mirrors. 
 
 For a zip file of current code from web: Click "Downloads" > "Branches" > "zip"
 
