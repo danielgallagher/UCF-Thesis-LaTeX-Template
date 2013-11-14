@@ -37,19 +37,19 @@ Individuals are encouraged to support bug fixes and other updates. No official s
 
 or 
 
-`git@github.com:danielgallagher/UCF-Thesis-LaTeX-Template.git`
+`git clone git@github.com:danielgallagher/UCF-Thesis-LaTeX-Template.git`
 
 ### Git HTTPS:
 
-`git clone https://dgallagher@bitbucket.org/dgallagher/ucf-thesis-latex-template.git`
+`git clone https://bitbucket.org/dgallagher/ucf-thesis-latex-template.git`
 
 or
 
-`https://github.com/danielgallagher/UCF-Thesis-LaTeX-Template.git`
+`git clone https://github.com/danielgallagher/UCF-Thesis-LaTeX-Template.git`
 	
 ### Zip file:
 
-Download the current version from [bitbucket](https://bitbucket.org/dgallagher/ucf-thesis-latex-template/downloads) or [github]() repository mirrors. 
+Download the current version from [bitbucket](https://bitbucket.org/dgallagher/ucf-thesis-latex-template/downloads) or [Github](https://github.com/danielgallagher/UCF-Thesis-LaTeX-Template) repository mirrors. 
 
 For a zip file of current code from web: Click "Downloads" > "Branches" > "zip"
 
