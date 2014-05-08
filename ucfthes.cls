@@ -446,7 +446,7 @@
 
 \def\l@chapter#1#2{\pagebreak[3]
    \vskip 1.0em plus 1pt  % space above chapter line
-   \@tempdima 1.5em       % width of box holding chapter number
+   \@tempdima 1.75em       % width of box holding chapter number
    \begingroup
      \parindent \z@ \rightskip \@pnumwidth
      \parfillskip -\@pnumwidth
