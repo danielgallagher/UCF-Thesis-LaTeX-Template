@@ -1,5 +1,5 @@
 % UCF THESIS MACROS
-% (C) Copyright 2007 by Daniel Gallagher,
+% (C) Copyright 2007-2014  by Daniel Gallagher,
 % derived from work (C) Copyright 2000 by Ivan Garibay,
 % derived from work (C) Copyright 1995 by John Heidemann,
 % derived from work (C) Copyright 1988 Richard B. Wales,
@@ -40,7 +40,7 @@
 %\school{NO SCHOOL!?!}
 
 % UCF: I. Garibay 3.14.00
-% The following commands set the Degrees previosly earned and institutions 
+% The following commands set the Degrees previosly earned and institutions
 % that awarded them.
 
 \newif\if@prevdegreei
@@ -122,4 +122,3 @@
    {\def\@degreeyear{#1}\if@cyrset\else\def\@copyrightyear{#1}\fi}
 \newcommand{\degreemonth}[1]{\def\@degreemonth{#1}}
 \newcommand{\copyrightyear}[1]{\def\@copyrightyear{#1}\@cyrsettrue}
-

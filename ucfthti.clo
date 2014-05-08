@@ -1,5 +1,5 @@
 % UCF THESIS TITLE PAGE STYLE (format for preliminary pages)
-% (C) Copyright 2007 Daniel Gallagher,
+% (C) Copyright 2007-2014 Daniel Gallagher,
 % derived from work (C) Copyright 2000 by Ivan Garibay,
 % derived from work (C) Copyright 1995 John Heidemann,
 % derived from work (C) Copyright 1988 Richard B. Wales,
@@ -90,8 +90,8 @@
          \vskip 24pt plus0pt minus6pt
          A \@thesisname \hspace{1pt} submitted in partial fulfillment of the requirements\\
          for the degree of \@degreename \\
-         %\if@department\ in the Department of \@department \fi\\
-         \if@school\ in the School of \@school \fi\\
+         \if@department\ in the Department of \@department \\ \fi
+         \if@school\ in the School of \@school \\ \fi
          in the College of \@college \\
          at the University of Central Florida \\
          Orlando, Florida
@@ -120,7 +120,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% UCF : I. Garibay: Centered vertical and horizontal
 
-
 \newif\if@copyright
 \@copyrighttrue
 \newcommand\nocopyright{\@copyrightfalse}
@@ -133,7 +132,7 @@
    \pagenumbering{roman}
    \setcounter{page}{2}   % Changed from 0 D. Gallagher 10/30/2006
    %\thispagestyle{empty} % Show Page Number on Copyright Page per Editor D. Gallagher 10/30/2006
-   \thispagestyle{plain} 
+   \thispagestyle{plain}
    \null
    \vfill
    \if@copyright
@@ -204,13 +203,13 @@
    \noindent
    \renewcommand\baselinestretch{1}\@normalsize
 %  \normalsize \normalfont The \@thesisname\ of \@author\ is approved.
-   \normalsize \normalfont 
+   \normalsize \normalfont
    \begin{center}UNIVERSITY OF CENTRAL FLORIDA\\
                      DISSERTATION APPROVAL
    \end{center}
    \nohyphens The members of the Committee approve the dissertation entitled
     \textit{\@title}\ of \@author, defended \@defensedate.
-   
+
 %   \vskip 72pt plus0pt minus24pt
    \vskip 24pt
  \begin {multicols}{2}
@@ -234,7 +233,7 @@
 %      \fi\fi\fi
  \@signatureline{2in}{\@chairA, Chair} \vskip 12pt
  \@signatureline{2in}{\@memberA}\\ Committee Member \vskip 14pt
-% \mbox{ } \vskip 30pt 
+% \mbox{ } \vskip 30pt
  \@signatureline{2in}{\@memberB}\\ Committee Member \vskip 14pt
  \@signatureline{2in}{\@memberC}\\ Committee Member \vskip 14pt   % Comment line for MS Thesis
 % \@signatureline{2in}{\@memberD}\\ Committee Member \vskip 14pt
@@ -242,16 +241,16 @@
  \noindent
  It is recommended that this dissertation be used in partial fulfillment
  of the requirements for the degree of Doctor of Philosophy from the
- Department of \@department\ in the College of Engineering and Computer Science. \vskip 14pt 
- 
+ Department of \@department\ in the College of Engineering and Computer Science. \vskip 14pt
+
   \@signatureline{3in}{Issa Batarseh, Chair, Department Head} \vskip 14pt
   \@signatureline{3in}{Jamal Nayfeh, Associate Dean, Academic Affairs and Graduate Studies} \vskip 14pt
   \@signatureline{3in}{Neal C.\ Gallagher, Dean of College} \vskip 14pt
   \@signatureline{3in}{Patricia J.\ Bishop}\\ Vice Provost and Dean of Graduate Studies \vskip 18pt
- \noindent 
+ \noindent
  The committee, the college, and the University of Central Florida are not
  liable for any use of the materials presented in this study.
- 
+
 %   \vfill
 %   \begin {center}
 %      University of Central Florida, Orlando \\ \@degreeyear
@@ -379,7 +378,7 @@
 \newcommand\@makeacknowledgmentsheading{
   {
     \centering
-    
+
     \phantomsection \pdfbookmark[0]{ACKNOWLEDGMENTS}{lbl_ACKNOWLEDGMENTS} %UCF: D. Gallagher 2007 Add to Bookmarks only
 %%%%    \addcontentsline{toc}{frontmatter}{ACKNOWLEDGMENTS}  % UCF: D. Gallagher 2006 Add to frontmatter per editor
     \vspace*{45pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
@@ -612,11 +611,11 @@
       \par\pagestyle{plain}
               \vspace*{30pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
            \pagenumbering{roman}
-           \setcounter{page}{3}  % Change if no copyright page / Not necessary if there is a copyright page 
-        
+           \setcounter{page}{3}  % Change if no copyright page / Not necessary if there is a copyright page
+
         \phantomsection \pdfbookmark[0]{ABSTRACT}{lbl_abstract} %UCF: D. Gallagher 2007 - Add to Bookmarks
 %%%%        \addcontentsline{toc}{frontmatter}{ABSTRACT}  % UCF: D. Gallagher 2006 Add to frontmatter per editor
-                
+
         \begin{center}
 %        \textbf{\@titlesize Abstract}\\[12pt]
 %        \textsc{\large Abstract}
@@ -691,11 +690,11 @@
       \ColumnSave
 %      \par\pagestyle{plain}
 %              \vspace*{30pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
- 
- \chapter*{LIST OF ACRONYMS\markboth{LIST OF ACRONYMS}{LIST OF ACRONYMS}}\addcontentsline{toc}{frontmatter}{LIST OF ACRONYMS}     
+
+ \chapter*{LIST OF ACRONYMS\markboth{LIST OF ACRONYMS}{LIST OF ACRONYMS}}\addcontentsline{toc}{frontmatter}{LIST OF ACRONYMS}
 
 %        \phantomsection \addcontentsline{toc}{frontmatter}{LIST OF ACRONYMS}  % UCF: D. Gallagher 2007 Add to frontmatter per editor
-%                
+%
 %        \begin{center}
 %%        \textbf{\@titlesize List of Acronyms}\\[12pt]
 %        \textsc{\large List of Acronyms}
@@ -711,7 +710,7 @@
 %\setlength\LTright{0pt}
         \begin{longtable}{lcl}
             \@acronyms
-        \end{longtable}        
+        \end{longtable}
 %        \end{center}
 
       \renewcommand\baselinestretch{\@spacing}\@normalsize
@@ -731,10 +730,10 @@
 
   % If you do not want to generate a signature page
   % the \nosigpage command should be used in preamble or intropages tex file
-  \if@sigpage   
+  \if@sigpage
       \@makesignaturepage
   \fi
-  
+
   \@maketitlepage
   % If we're printing two sided,
   % insert a blank page for the back of the title page.

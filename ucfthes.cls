@@ -1,5 +1,5 @@
 % UNIVERSITY OF CENTRAL FLORIDA THESIS/DISSERTATION CLASS -- for LaTeX version 2e
-% (C) Copyright 2007 Daniel Gallagher,
+% (C) Copyright 2007-2014 Daniel Gallagher,
 % derived from work (C) Copyright 2000-2004 by Ivan Garibay,
 %
 % Taken from UCLA THESIS/DISSERTATION CLASS
@@ -153,6 +153,7 @@
 \def\ucfthesdate{2000/03/12}
 \ProvidesClass{ucfthes}[\ucfthesdate, \ucfthesversion]
 \typeout{Updated to meet ETD guidelines Copyright (C) 2007 by Daniel Gallagher.}
+\typeout{Available at https://bitbucket.org/dgallagher/ucf-thesis-latex-template}
 \typeout{LaTeX2e port copyright (C) 2000 by Ivan Garibay.}
 \typeout{Copyright (C) 1995 by John Heidemann, copyright (C) 1988 by Richard B. Wales, copyright (C) 1985 by Leslie Lamport.}
 \typeout{Please submit bug reports and other issues <https://bitbucket.org/dgallagher/ucf-thesis-latex-template/issues>.}
