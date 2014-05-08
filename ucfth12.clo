@@ -26,7 +26,7 @@
 % Each size-changing command \SIZE executes the command
 %        \@setsize\SIZE{BASELINESKIP}\FONTSIZE\@FONTSIZE
 % where:
-%   BASELINESKIP = Normal value of \baselineskip for that size.  (Actual 
+%   BASELINESKIP = Normal value of \baselineskip for that size.  (Actual
 %                  value will be \baselinestretch * BASELINESKIP.)
 %
 %  \FONTSIZE     = Name of font-size command.  The currently available
@@ -88,7 +88,6 @@
 
 \normalsize  % Choose the normalsize font.
 
-
 %  ****************************************
 %  *            PAGE LAYOUT               *
 %  ****************************************
@@ -101,7 +100,7 @@
 % UCF MARGINS:
 % Margins must be at least 1.5 inches on the left and 1 inch on all other sides. The first
 % page of certain preliminary sections (Approval PAge, Title Page, Abstract, Acknowledgments,
-% Table of Contents, and any Lists), the first page of chapters or major sections, and the 
+% Table of Contents, and any Lists), the first page of chapters or major sections, and the
 % first page of the List of References, Endnotes, and Index requere 2-inch top margin
 
 % Vargas Side Margins
@@ -119,7 +118,8 @@
 \evensidemargin 0.0in    % these are added to the 1 inch margin.
 
 
-% VERTICAL SPACING:        
+% VERTICAL SPACING:
+\setlength{\paperheight}{11in} % Suppress hyperref error - DG 5/2014
                           % Top of page:
 %\topmargin 0.15in         %    Nominal distance from top of page to top
                           %    of box containing running head.
@@ -165,20 +165,20 @@
                                          % to top or bottom of text page.
 \textfloatsep 20pt plus 2pt minus 4pt    % Space between main text and floats
                                          % at top or bottom of page.
-\intextsep 14pt plus 4pt minus 4pt       % Space between in-text figures and 
+\intextsep 14pt plus 4pt minus 4pt       % Space between in-text figures and
                                          % text.
 % johnh: \@maxsep unused
-% \@maxsep 20pt                            % The maximum of \floatsep, 
+% \@maxsep 20pt                            % The maximum of \floatsep,
                                          % \textfloatsep and \intextsep (minus
                                          % the stretch and shrink).
 
 %  FOR FLOATS ON A SEPARATE FLOAT PAGE OR COLUMN:
 %    ONE-COLUMN MODE OR SINGLE-COLUMN FLOATS IN TWO-COLUMN MODE:
-\@fptop 0pt plus 1fil    % Stretch at top of float page/column. (Must be    
-                         % 0pt plus ...)                                    
-\@fpsep 10pt plus 2fil    % Space between floats on float page/column.       
-\@fpbot 0pt plus 1fil    % Stretch at bottom of float page/column. (Must be 
-                         % 0pt plus ... )                                   
+\@fptop 0pt plus 1fil    % Stretch at top of float page/column. (Must be
+                         % 0pt plus ...)
+\@fpsep 10pt plus 2fil    % Space between floats on float page/column.
+\@fpbot 0pt plus 1fil    % Stretch at bottom of float page/column. (Must be
+                         % 0pt plus ... )
 
 
 %  ****************************************
@@ -187,10 +187,10 @@
 %
 \parskip 4pt plus 1pt              % Extra vertical space between paragraphs.
 \parindent 1.5em                   % Width of paragraph indentation.
-\topsep 10pt plus 4pt minus 6pt    % Extra vertical space, in addition to 
+\topsep 10pt plus 4pt minus 6pt    % Extra vertical space, in addition to
                                    % \parskip, added above and below list and
                                    % paragraphing environments.
-\partopsep 3pt plus 2pt minus 2pt  % Extra vertical space, in addition to 
+\partopsep 3pt plus 2pt minus 2pt  % Extra vertical space, in addition to
                                    % \parskip and \topsep, added when user
                                    % leaves blank line before environment.
 \itemsep 5pt plus 2.5pt minus 1pt  % Extra vertical space, in addition to
@@ -225,9 +225,9 @@
 \def\part{\cleardoublepage   % Starts new page.
    \thispagestyle{plain}     % Page style of part page is 'plain'
     \@tempswafalse           %  @tempswa := false
-  \hbox{}\vfil               % Add fil glue to center title  
+  \hbox{}\vfil               % Add fil glue to center title
   \bgroup  \centering        % BEGIN centering
-  \secdef\@part\@spart}     
+  \secdef\@part\@spart}
 
 \def\@part[#1]#2{\ifnum \c@secnumdepth >-2\relax  % IF secnumdepth > -2
         \refstepcounter{part}                     %   THEN step part counter
@@ -241,13 +241,13 @@
     \vskip 20pt \fi                  %        Add space before title.
     \huge \bfseries                        % FI
     #1\@endpart}                     % Print Title in \huge bold.
-    
+
 % \@endpart finishes the part page
 %
-\def\@endpart{\par\egroup     % END centering 
+\def\@endpart{\par\egroup     % END centering
    \vfil\newpage              % End page with 1fil glue.
-   \if@tempswa                % IF @tempswa = true       
-     \twocolumn               %   THEN \twocolumn 
+   \if@tempswa                % IF @tempswa = true
+     \twocolumn               %   THEN \twocolumn
    \fi}                       % FI
 
 \def\@spart#1{\normalsize \bfseries            % Print title in \normalsize boldface
@@ -257,18 +257,18 @@
 %
 
 %%% UCF D. Gallagher - For chapter titles: Set Font size to large rather than Large and spacing to single per editor
-%%% "*Single-space chapter and major headings if you stack them (see chapter titles). 
+%%% "*Single-space chapter and major headings if you stack them (see chapter titles).
 %%% Chapter titles should look exactly like other major headings (LIST OF ACRONYMS, etc)"
 \def\@makechapterhead#1{             % Heading for \chapter command
   \vspace*{30pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
-  { \parindent 0pt \raggedright 
+  { \parindent 0pt \raggedright
     \ifnum \c@secnumdepth >\m@ne     % IF secnumdepth > -1 THEN
       \centering \large\bfseries \MakeUppercase{\@chapapp{}} \thechapter % Print 'CHAPTER' and number.
-      \par 
+      \par
       \vskip -20pt                    % Space between number and title. Adjusted by D. Gallagher to remove space between chap # and heading
       \fi
     \centering \large\bfseries                       % Title.
-    \MakeUppercase{#1}\par 
+    \MakeUppercase{#1}\par
     \nobreak                         % TeX penalty to prevent page break.
     \vskip 20pt                      % Space between title and text.
   } }
@@ -277,14 +277,14 @@
 %%% For Small Caps Chapter Headings Instead of ALL CAPS - D. Gallagher
 %\def\@makechapterhead#1{             % Heading for \chapter command
 %  \vspace*{30pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
-%  { \parindent 0pt \raggedright 
+%  { \parindent 0pt \raggedright
 %    \ifnum \c@secnumdepth >\m@ne     % IF secnumdepth > -1 THEN
 %      \centering \large\scshape \@chapapp{} \thechapter  % Print 'CHAPTER' and number.
-%      \par 
+%      \par
 %      \vskip -20pt                    % Space between number and title. Adjusted by D. Gallagher to remove space between chap # and heading
 %      \fi
 %    \centering \large\scshape                       % Title.
-%    #1\par 
+%    #1\par
 %    \nobreak                         % TeX penalty to prevent page break.
 %    \vskip 20pt                      % Space between title and text.
 %  } }
@@ -294,9 +294,9 @@
 
 \def\@makeschapterhead#1{            % Heading for \chapter* command
     \vspace*{35pt}                  % Space at top of page. (UCF:to add up to 2-inches)
-  { \parindent 0pt \raggedright 
+  { \parindent 0pt \raggedright
     \centering \large \scshape       % Title.
-    #1\par 
+    #1\par
     \nobreak                         % TeX penalty to prevent page break.
     \vskip 20pt                      % Space between title and text.
   } }
@@ -330,20 +330,20 @@
     \@afterheading}                 % Routine called after chapter and
                                     % section heading.
 
-\def\@schapter#1{\@makeschapterhead{#1} 
+\def\@schapter#1{\@makeschapterhead{#1}
               \@afterheading}
 
-% \@startsection {NAME}{LEVEL}{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE} 
+% \@startsection {NAME}{LEVEL}{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE}
 %            optional * [ALTHEADING]{HEADING}
-%    Generic command to start a section.  
+%    Generic command to start a section.
 %    NAME       : e.g., 'subsection'
 %    LEVEL      : a number, denoting depth of section -- e.g., chapter=1,
 %                 section = 2, etc.  A section number will be printed if
 %                 and only if LEVEL < or = the value of the secnumdepth
 %                 counter.
 %    INDENT     : Indentation of heading from left margin
-%    BEFORESKIP : Absolute value = skip to leave above the heading.  
-%                 If negative, then paragraph indent of text following 
+%    BEFORESKIP : Absolute value = skip to leave above the heading.
+%                 If negative, then paragraph indent of text following
 %                 heading is suppressed.
 %    AFTERSKIP  : if positive, then skip to leave below heading,
 %                       else - skip to leave to right of run-in heading.
@@ -386,7 +386,7 @@
 \def\paragraph{\@startsection
      {paragraph}{4}{\z@}{3.25ex plus 1ex minus .2ex}{-1em}{\normalsize\bfseries}}
 \def\subparagraph{\@startsection
-     {subparagraph}{4}{\parindent}{3.25ex plus 1ex minus 
+     {subparagraph}{4}{\parindent}{3.25ex plus 1ex minus
      .2ex}{-1em}{\normalsize\bfseries}}
 
 % Default initializations of \...mark commands.  (See below for their
@@ -463,7 +463,7 @@
 
 \def\@listiii{\leftmargin\leftmarginiii
     \labelwidth\leftmarginiii\advance\labelwidth-\labelsep
-    \topsep 2.5pt plus 1pt minus 1pt 
+    \topsep 2.5pt plus 1pt minus 1pt
     \parsep \z@ \partopsep 1pt plus 0pt minus 1pt
     \itemsep \topsep}
 
@@ -475,4 +475,3 @@
 
 \def\@listvi{\leftmargin\leftmarginvi
      \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
-
