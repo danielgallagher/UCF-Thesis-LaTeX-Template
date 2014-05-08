@@ -22,10 +22,12 @@
 *.nav
 *.nlo
 *.out
+*.pdf
 *.pdfsync
 *.ps
 *.snm
 *.synctex.gz
+*.synctex
 *.toc
 *.vrb
 *.xdy

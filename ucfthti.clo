@@ -83,9 +83,9 @@
 
          \vskip 24pt plus0pt minus6pt
          \textsc{\large \@author} \\
-          \if@prevdegreei\ \@prevdegreei \fi\\
-         %\if@prevdegreeii\ \@prevdegreeii \fi\\
-         %\if@prevdegreeiii\ \@prevdegreeiii \fi\\
+          \if@prevdegreei\ \@prevdegreei   \\ \fi
+          \if@prevdegreeii\ \@prevdegreeii  \\ \fi
+          \if@prevdegreeiii\ \@prevdegreeiii \\ \fi
 
          \vskip 24pt plus0pt minus6pt
          A \@thesisname \hspace{1pt} submitted in partial fulfillment of the requirements\\
