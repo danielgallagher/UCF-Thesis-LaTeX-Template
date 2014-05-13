@@ -25,8 +25,8 @@
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %\bibliographystyle {thesis}
-%\bibliographystyle {IEEEtran}        %%% Use IEEE bibliography style (ie. [1])
-\bibliographystyle {plain}
+\bibliographystyle {IEEEtran}        %%% Use IEEE bibliography style (ie. [1])
+%\bibliographystyle {plain}
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %\bibliographystyle {agsm}
 %\usepackage{harvard}
@@ -121,13 +121,13 @@
 \usepackage[%dvipdfm,               %dvips, %driver used - Alt: dvips/ps2pdf(expands dvips for gs), latex2html, pdftex
             bookmarks=true,
 %            hypertexnames=false,    %%%  this might be necessary in order to get the hyper-links to the figures right use guessable names for links when set true
-	    % ~~~
+          % ~~~
             %linktocpage=true,      %%% Use page number for bookmark links instead of heading title.
 %            linktoc=section,
             raiselinks = true,
             hidelinks,
             %plainpages=true,
-            %breaklinks=true,
+            %breaklinks=true, % Fix issue when using \listoffigures with hyperref for long captions or long titles.
             %%%%%% PDF Viewing Options Below %%%%%
             pdfpagemode = UseOutlines,
             % pdfpagemode = none,   %%% Determines how the file is opening in Acrobat; the possibilities are None, UseThumbs (show thumbnails), UseOutlines (show bookmarks), and FullScreen. If no mode if explicitly chosen, but the bookmarks option is set, UseOutlines is used.
@@ -152,6 +152,7 @@
             }
 }
 \makeatother
+\usepackage[all]{hypcap}  % Fix link anchor. Be sure to call this package after loading hyperref.
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %\usepackage{breakurl}
-% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
