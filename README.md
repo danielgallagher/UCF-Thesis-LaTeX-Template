@@ -12,6 +12,8 @@ Affiliation: [Consortium for Applied Acoustoelectronic Technology](http://caat.e
 ## Introduction
 This template was originally developed in 2007 in compliance with the UCF ETD masters thesis guidelines. It has since been used by various colleges in their PhD dissertation submissions. At this time there was no official LaTeX template available from the university. There is now a basic template supplied by the editor in Graduate studies located on the [ETD formatting website](http://www.students.graduate.ucf.edu/ETD_formatting/). However, some may prefer to use this template for there needs.
 
+See the [LaTeX Wikibook](http://en.wikibooks.org/wiki/LaTeX/) for addtitional typesetting help.
+
 ### Motivation
 By publishing my template in a public git repository, I hope that the template may be used by others and will continue to evolve with the revised ETD format guidelines through user contributed updates. 
 
