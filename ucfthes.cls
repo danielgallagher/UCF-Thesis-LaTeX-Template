@@ -429,7 +429,7 @@
 % TABLEOFCONTENTS
 
 \def\tableofcontents{
-\chapter*{TABLE OF CONTENTS\markboth{CONTENTS}{CONTENTS}} \pdfbookmark[0]{TABLE OF CONTENTS}{lbl_toc} %UCF: D. Gallagher 2007 Add to Bookmarks only
+\chapter*{\large\bfseries TABLE OF CONTENTS\markboth{CONTENTS}{CONTENTS}} \pdfbookmark[0]{TABLE OF CONTENTS}{lbl_toc} %UCF: D. Gallagher 2007 Add to Bookmarks only
 %%%%%    \addcontentsline{toc}{frontmatter}{TABLE OF CONTENTS}  % UCF: D. Gallagher 2006 Add to frontmatter per editor
 \renewcommand\baselinestretch{\@spacing}\@normalsize\@starttoc{toc}}
 
@@ -485,7 +485,7 @@
 \newif\if@figures
 \@figurestrue  % rbw did this in \makeintropages; I moved it here.  ---johnh 950825
 \def\listoffigures{
-  \if@figures\chapter*{LIST OF FIGURES\markboth
+  \if@figures\chapter*{\large\bfseries LIST OF FIGURES\markboth
    {LIST OF FIGURES}{LIST OF FIGURES}}\addcontentsline{toc}{frontmatter}{LIST OF FIGURES}\@starttoc{lof}\fi}
 
 %\def\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
@@ -509,7 +509,7 @@
 \newif\if@tables
 \@tablestrue  % rbw did this in \makeintropages; I moved it here.  ---johnh 950825
 \def\listoftables{
-  \if@tables\chapter*{LIST OF TABLES\markboth
+  \if@tables\chapter*{\large\bfseries LIST OF TABLES\markboth
    {LIST OF TABLES}{LIST OF TABLES}}\addcontentsline{toc}{frontmatter}{LIST OF TABLES}\@starttoc{lot}\fi}
 
 %\let\l@table\l@figure
@@ -546,7 +546,7 @@
 %  UCF: I. Garibay: Name of the Bibliography is: LIST OF REFERENCES
 %2004, and all in CAPS
 
-\def\thebibliography#1{\chapter*{LIST OF REFERENCES\markboth
+\def\thebibliography#1{\chapter*{\large\bfseries LIST OF REFERENCES\markboth
   {REFERENCES}{REFERENCES}}
   \addcontentsline{toc}{frontmatter}{LIST OF REFERENCES}
   \renewcommand\baselinestretch{1}

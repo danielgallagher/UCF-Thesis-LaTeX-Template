@@ -383,7 +383,7 @@
 %%%%    \addcontentsline{toc}{frontmatter}{ACKNOWLEDGMENTS}  % UCF: D. Gallagher 2006 Add to frontmatter per editor
     \vspace*{45pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
 %    \textsc{\large Acknowledgments}
-     \MakeUppercase{\large Acknowledgments}
+     \MakeUppercase{\large \bfseries Acknowledgments}
     \vskip 0pt
   }
 }
@@ -619,7 +619,7 @@
         \begin{center}
 %        \textbf{\@titlesize Abstract}\\[12pt]
 %        \textsc{\large Abstract}
-	\MakeUppercase{\large Abstract}
+	\MakeUppercase{\large \bfseries Abstract}
         \end{center}
 
 %      \begin{center}

@@ -295,7 +295,7 @@
 \def\@makeschapterhead#1{            % Heading for \chapter* command
     \vspace*{35pt}                  % Space at top of page. (UCF:to add up to 2-inches)
   { \parindent 0pt \raggedright
-    \centering \large \scshape       % Title.
+    \centering \large \bfseries %\scshape       % Title.
     #1\par
     \nobreak                         % TeX penalty to prevent page break.
     \vskip 20pt                      % Space between title and text.
