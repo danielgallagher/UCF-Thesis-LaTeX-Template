@@ -10,7 +10,7 @@
 %%%
 \NeedsTeXFormat{LaTeX2e}
 \def\ucfthmaversion{1.0 beta}
-\def\ucfthmadate{1995/08/25}
+\def\ucfthmadate{2014/5/14}
 \ProvidesFile{ucfthma}[\ucfthmadate, \ucfthmaversion]
 
 % The following commands set the thesis/dissertation title and author,

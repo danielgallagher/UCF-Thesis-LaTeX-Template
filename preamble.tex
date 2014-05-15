@@ -65,7 +65,7 @@
 %%%%%%%%%%%%%%\input{newsection}
 %\input{macros}			   %%% Custom macros file (macros.tex)
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\usepackage{amsmath,amssymb,amsfonts}  %%% Typical math packages
+% \usepackage{amsmath,amssymb,amsfonts}  %%% Typical math packages
 %\input{srcltx.sty}
 %\usepackage{chapterfolder}         %%% Nifty package (if you can get working) for using a separate folder per chapter
 %\usepackage{import}
@@ -85,6 +85,7 @@
 \usepackage{multicol}               %%% Needed for signature page generation
 % \usepackage{times}                 %%% Times New Roman Font (Outdated)
 % \usepackage{mathptmx}               %%% "Newer" Times new roman with math support - http://ctan.org/pkg/mathptmx
+% \usepackage{microtype}
 %
 % ~~~~~~~~ Custom commands for image sizes ~~~~~~~~~~~~
 \newcommand{\imsize}{3.5in}
@@ -121,7 +122,7 @@
 \usepackage[%dvipdfm,               %dvips, %driver used - Alt: dvips/ps2pdf(expands dvips for gs), latex2html, pdftex
             bookmarks=true,
 %            hypertexnames=false,    %%%  this might be necessary in order to get the hyper-links to the figures right use guessable names for links when set true
-          % ~~~
+	    % ~~~
             %linktocpage=true,      %%% Use page number for bookmark links instead of heading title.
 %            linktoc=section,
             raiselinks = true,
@@ -152,7 +153,7 @@
             }
 }
 \makeatother
-\usepackage[all]{hypcap}  % Fix link anchor. Be sure to call this package after loading hyperref.
+\usepackage[all]{hypcap} % Fix link anchor. Be sure to call this package after loading hyperref.
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %\usepackage{breakurl}
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 

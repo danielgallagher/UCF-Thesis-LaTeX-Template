@@ -150,7 +150,7 @@
 %%%
 \NeedsTeXFormat{LaTeX2e}
 \def\ucfthesversion{1.0}
-\def\ucfthesdate{2000/03/12}
+\def\ucfthesdate{2014/5/14}
 \ProvidesClass{ucfthes}[\ucfthesdate, \ucfthesversion]
 \typeout{Updated to meet ETD guidelines Copyright (C) 2007 by Daniel Gallagher.}
 \typeout{Available at https://bitbucket.org/dgallagher/ucf-thesis-latex-template}
