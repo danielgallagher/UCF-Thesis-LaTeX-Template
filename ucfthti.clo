@@ -69,7 +69,7 @@
       \begin {center}
 \vspace*{40pt}                     % Space at top of text page. (UCF:to add up to 2-inches)
 \pagenumbering{roman}
-\setcounter{page}{0}
+\setcounter{page}{1}
          %\textsc{\large University of Central Florida} \\
          %\normalsize Orlando \\
          %\vfill
