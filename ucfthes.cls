@@ -421,9 +421,9 @@
 %   \@dotsep    : Separation between dots, in mu units.  Should be \def'd to
 %                 a number like 2 or 1.7
 
-\def\@pnumwidth{1.55em}
+\def\@pnumwidth{1.8em}  % Increase from 1.55em to fix bad hbox for longer roman page numbers
 \def\@tocrmarg {2.55em}
-\def\@dotsep{4.5}
+\def\@dotsep{2.25}  % Decreased from 4.5
 \setcounter{tocdepth}{2}
 
 % TABLEOFCONTENTS
