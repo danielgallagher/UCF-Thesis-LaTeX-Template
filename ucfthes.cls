@@ -451,7 +451,7 @@
    \begingroup
      \parindent \z@ \rightskip \@pnumwidth
      \parfillskip -\@pnumwidth
-     \bfseries                  % Boldface.
+     %\bfseries                  % Boldface. (Disable per editor 5/2014)
      \leavevmode          % TeX command to enter horizontal mode.
      %CHAPTER  			% D. Gallagher- Removing this and placing the word CHAPTER in the TOC definition will link the word chapter not just the number
      #1  \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill % Force TOC entry to say "chapter" #
@@ -466,7 +466,7 @@
    \begingroup
      \parindent \z@ \rightskip \@pnumwidth
      \parfillskip -\@pnumwidth
-     \bfseries                  % Boldface.
+     %\bfseries                  % Boldface. (Disable per editor 5/2014)
      \leavevmode          % TeX command to enter horizontal mode.
     	   #1  \leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}\hfill
      \hbox to\@pnumwidth{\hfil #2}\par
