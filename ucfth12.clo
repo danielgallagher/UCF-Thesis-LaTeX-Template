@@ -98,8 +98,8 @@
 % copying enlarges or misaligns it slightly.
 
 % UCF MARGINS:
-% Margins must be at least 1.5 inches on the left and 1 inch on all other sides. The first
-% page of certain preliminary sections (Approval PAge, Title Page, Abstract, Acknowledgments,
+% Margins must be at least 1 or 1.5 inches on the left and 1 inch on all other sides. The first
+% page of certain preliminary sections (Approval Page, Title Page, Abstract, Acknowledgments,
 % Table of Contents, and any Lists), the first page of chapters or major sections, and the
 % first page of the List of References, Endnotes, and Index requere 2-inch top margin
 
@@ -120,6 +120,7 @@
 
 % VERTICAL SPACING:
 \setlength{\paperheight}{11in} % Suppress hyperref error - DG 5/2014
+\setlength{\paperwidth}{8.5in} % Explicitly define pagewidth too.
                           % Top of page:
 %\topmargin 0.15in         %    Nominal distance from top of page to top
                           %    of box containing running head.
